@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <title>Phoemela's Place</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+
+    <style>
+    
+    .page-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+        height: auto;
+    }
+    
+    .side  {
+        width: 25%;
+    }
+    .middle {
+        width: 50%;
+        padding-top: 8px;
+        padding-bottom: 32px;
+        align-items: center;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 800px) {
+        .page-wrapper > * {
+            flex-basis: 100%;
+        }
+    }
+    </style>
+
+</head>
+
+<body>
+    <h1>WELCOME TO MY HOME</h1>
+    <div class="page-wrapper">
+        <div class="side"></div>
+        <div class="middle">
+            <img src="assets/images/house.png" width="100%">
+        </div>
+        <div class="side"></div></div>
+     <div class="page-wrapper">
+        <div class="side"></div>
+        <div class="middle">
+            <p>Kindly take off your shoes first.
+                <span role="img" aria-label="Smiling Face">&#x263A;&#xFE0E;</span>
+            </p>
+            <form>
+                <button formaction="house.html">Enter</button>
+            </form>
+        </div>
+        <div class="side"></div>
+     </div>
+</body>
+</html>

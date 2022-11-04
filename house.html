@@ -1,0 +1,152 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <title>Inside my home</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <style>
+
+    .upper-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .upper-side {
+        width:25%;
+        text-align: right;
+    }
+
+    .upper-middle {
+        width: 50%;
+        text-align: center;
+        height: 300px;
+    }
+
+    .items-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 64px;
+        height: auto;
+        column-gap: 20px;
+    }
+
+    .items  {
+        width: 15%;
+        text-align: center;
+        margin-top: auto;
+        height: 200px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 68px;
+
+    }
+
+    .items img{
+        height: 70%;
+    }
+
+    .items img:hover {
+        animation: rotation 6s infinite linear;
+    }
+
+    @keyframes rotation {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(359deg);
+        } 
+    }
+
+    .lower-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .lower-side {
+        width:25%;
+        text-align: right;
+    }
+
+    .lower-middle {
+        width: 50%;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 800px) {
+        .items-wrapper > * {
+            flex-basis:30%;
+        }
+        .upper-wrapper > * {
+            flex-basis: 100%;
+        }
+        .lower-wrapper > * {
+            flex-basis: 100%;
+        }
+    }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="upper-wrapper">
+        <div class="upper-side"></div>
+        <div class="upper-middle">
+            <a href="sky.html"><img src="assets/images/home/windows.png" height="90%"></a>
+        </div>
+        <div class="upper-side"></div>
+    </div>
+    <div class="items-wrapper">
+        <div class="items" >
+            <a href="song.html"><img src="assets/images/home/record.png"></a>
+            <p>song</p>
+        </div>
+        <div class="items">
+            <a href="note.html"><img src="assets/images/home/note.png"></a>
+            <p>note</p>
+        </div>
+        <div class="items">
+            <a href="stones.html"><img src="assets/images/home/stone.png"></a>
+            <p>stones</p>
+        </div>
+        <div class="items">
+            <a href="https://www.yourworldoftext.com/~comoballar/home" target="_blank"><img src="assets/images/home/bougainvillea.png"></a>
+            <p>garden</p>
+        </div>
+        <div class="items">
+            <a href="me.html"><img src="assets/images/home/me.png"></a>
+            <p>me</p>
+        </div>
+     </div>
+     <div class="lower-wrapper">
+        <div class="lower-side"></div>
+        <div class="lower-middle">
+            <form>
+                <button formaction="index.html">Bye</button>
+            </form>
+        </div>
+        <div class="lower-side"></div>
+    </div>
+</body>
+</html>

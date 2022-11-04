@@ -1,0 +1,80 @@
+/* 
+  The style rules specify elements by type and by attributes such as class and ID
+  Each section indicates an element or elements, then lists the style properties to apply
+  See if you can cross-reference the rules in this file with the elements in index.html
+*/
+
+/* Our default values set as CSS variables */
+
+@font-face {
+    font-family: 'Pilowlava';
+    src: url('assets/fonts/Pilowlava/Pilowlava.woff') format('woff'),
+    url('assets/fonts/Pilowlava/Pilowlava.woff2') format('woff2');
+    font-display: block;
+}
+
+
+body {
+    margin: 16px;
+    background: #F9F7EE;
+    padding-top: 32px;
+}
+  /* Basic page style resets */
+  
+h1 {
+    font-style: normal;
+    font-size: 45px;
+    font-family: 'Pilowlava', sans-serif;
+    color: #78866b;
+    text-align: center;
+}
+
+p {
+    font-style: normal;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    color: #78866b;
+    line-height: 1.5em;
+}
+  
+a {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    color: #78866b;
+}
+
+a:hover {
+  text-decoration:line-through;
+}
+  
+img {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+button {
+  border: 1px solid #78866b;
+  border-radius: 30px;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-family: 'Pilowlava',sans-serif;
+  font-size: 20px;
+  color:#78866b;
+  cursor: pointer;
+  background: #F9F7EE;
+}
+
+button:hover {
+    background: #78866b;
+    color: #F9F7EE;
+  }
+
+button:active {
+  background: #78866b;
+  color: #F9F7EE;
+}

@@ -1,0 +1,375 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+
+    <title>Stones</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <style>
+        .upper-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex;
+            width: 90%;
+            margin: 0 auto;
+            padding-bottom: 32px;
+        }
+
+        .upper-left {
+            width: 30%;
+            text-align: left;
+            padding-bottom: 56px;
+        }
+
+        .upper-right {
+            width: 65%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex;
+        }
+
+        .upper-right-row {
+            display: flex;
+            flex: row;
+            width: 100%;
+            height: 200px;
+            column-gap: 5%;
+
+        }
+
+        .upper-item {
+            width: 30%;
+
+        }
+
+        .upper-item img {
+            height: 70%;
+        }
+
+        .lower-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .lower-side {
+            width: 25%;
+            text-align: right;
+        }
+
+        .lower-middle {
+            width: 50%;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .upper-wrapper>* {
+                flex-basis: 100%;
+            }
+
+            .lower-wrapper>* {
+                flex-basis: 100%;
+            }
+
+        }
+
+        .lower-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex;
+            width: 90%;
+            margin: 0 auto;
+            padding-bottom: 32px;
+        }
+
+        .lower-side {
+            width: 25%;
+            text-align: right;
+        }
+
+        .lower-middle {
+            width: 50%;
+            text-align: center;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(249, 247, 238, 0.5);
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        .overlay:target {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .popup {
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            border-color: #78866b;
+            width: 30%;
+            position: relative;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+
+        .popup .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            transition: all 200ms;
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .popup .close:hover {
+            color: #78866b;
+        }
+
+        .popup .content {
+            max-height: 50%;
+            padding-top: 20px;
+            overflow: auto;
+        }
+
+        @media screen and (max-width: 700px) {
+            .box {
+                width: 70%;
+            }
+
+            .popup {
+                width: 70%;
+            }
+        }
+
+        .hovertext {
+            position: relative;
+            margin: auto;
+        }
+
+        .hovertext:before {
+        content: attr(data-hover);
+        visibility: hidden;
+        opacity: 0;
+        width: 100px;
+        background-color: #78866b;
+        color: #F9F7EE;
+        text-align: center;
+        border-radius: 5px;
+        padding: 5px 0;
+        font-family: 'Inter',sans-serif;
+
+        position: absolute;
+        z-index: 1;
+        left: 70px;
+        top: 110%;
+        }
+
+        .hovertext:hover:before {
+        opacity: 1;
+        visibility: visible;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="upper-wrapper">
+        <div class="upper-left">
+            <p>I collect stones. I like feeling their weight on my hand and tracing the patterns etched on their
+                surface with my fingers. Sometimes, I tell them my dreams. Pick them up and they might tell you about those dreams.</p>
+        </div>
+        <div class="upper-right">
+            <div class="upper-right-row">
+                <div class="upper-item">
+                    <span class="hovertext" data-hover="Click me">
+                    <a href="#stone1"><img src="assets/images/home/stone.png"></a></span>
+                </div>
+                <div class="upper-item">
+                    <a href="#stone2"><img src="assets/images/home/stone.png"></a>
+                </div>
+                <div class="upper-item">
+                    <a href="#stone3"><img src="assets/images/home/stone.png"></a>
+                </div>
+            </div>
+            <div class="upper-right-row">
+                <div class="upper-item">
+                    <a href="#stone4"><img src="assets/images/home/stone.png"></a>
+                </div>
+                <div class="upper-item">
+                    <a href="#stone5"><img src="assets/images/home/stone.png"></a>
+                </div>
+                <div class="upper-item">
+                    <a href="#stone6"><img src="assets/images/home/stone.png"></a>
+                </div>
+            </div>
+            <div class="upper-right-row">
+                <div class="upper-item">
+                    <a href="#stone7"><img src="assets/images/home/stone.png"></a>
+                </div>
+                <div class="upper-item">
+                    <a href="#stone8"><img src="assets/images/home/stone.png"></a>
+                </div>
+                <div class="upper-item">
+                    <a href="#stone9"><img src="assets/images/home/stone.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lower-wrapper">
+        <div class="lower-side"></div>
+        <div class="lower-middle">
+            <form>
+                <button formaction="house.html">Back</button>
+            </form>
+        </div>
+        <div class="lower-side"></div>
+    </div>
+
+    <!--Pop Ups-->
+    <div id="stone1" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <p>An old woman smiled at me and said, “You are a traveler.” She didn’t say
+                    of which world: inner or outer?
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="stone2" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <p>
+                    I was on my way to my dad's childhood home in an island in Bicol but no boat was available to
+                    transport me from the
+                    shore where I was to the island. I decided to swim instead but didn't get very far.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="stone3" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <p>
+                    There was a demon on the loose and I was trying to banish it. I didn't succeed so the demon is
+                    now on my trail. Then a couple arrived, they were able to banish the demon before.
+                    They told me I need the power of love for it.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="stone4" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <p>
+                    Someone died. Everyone was pretty okay about it, I was the only one who knew the gravity of that
+                    loss. In my grief, I decided to live near the sea. A resident of the area told me how hard it is to
+                    live there
+                    (unreliable water and electricity supply, poor data signal, no internet connection). I said I don't
+                    mind. Felt like that's where I was supposed to be.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="stone5" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <p>
+                    I dreamed of my past friends. Friends from grade school, high school, college. Not all of them, just
+                    those who are very very close with me. I was happy. We were walking home from school, and you know
+                    how people tend to partner up when walking with a big group? I ended up walking side by side F. For
+                    some reason, we decided to say “meow” whenever we saw a cat (so many stray cats in my dream).
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="stone6" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <p>
+                    A boy handed my sister a letter for me (I was younger in the dream). In the letter, he expressed his
+                    desire to talk to me about a particular book, then asked me if I’d be interested to go out and
+                    discuss
+                    the book with him. I saw him multiple times whenever I went out of the house or looked through the
+                    window.
+                    He was always smiling and playing with stray cats. At one time, we're both in a store and he smiled
+                    at me,
+                    but I was too shy to smile back or say, "Hello, I received your letter and I want to talk about that
+                    book
+                    with you."
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="stone7" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <p>
+                    It was nighttime and everyone in the street we're living in was outside. There seemed to be a
+                    festival where stray cats march through the street and enter each home. This is seen as a way to
+                    bring in good luck. The cats entered the house beside ours first. I remembered worrying about the
+                    cats because I was thinking it might be too tiring to bless every home in our street.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="stone8" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <p>There was a huge concrete water slide. I was at the top, in front of me was a musician. He seemed
+                    sad, but not melancholic sad, more like "the world is too beautiful and I cannot take it" sad. As he
+                    was about to go down the slide, I hurriedly put together a collage with a line from his song and 3
+                    pieces of magazine cutouts so I could show him that someone appreciates his art. I managed to finish
+                    the collage on time. He smiled as I handed it to him, then he went down the slide. I followed him,
+                    surprised to discover that the end of the slide was in nearshore waters instead of a swimming pool.
+                    The musician was standing not far from where I landed. He transformed into someone I'm in love
+                    with in waking life.</p>
+            </div>
+        </div>
+    </div>
+    <div id="stone9" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <p>I was about to attend a prom I previously declined to attend. Since I didn't plan on attending it, I
+                    spent much of my time searching for something to wear. Morning came (prom ended) and I still wasn't
+                    able to find a decent dress.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

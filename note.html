@@ -1,0 +1,176 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    
+    <title>Favorite poem</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <style>
+
+    .items  {
+        width: 25%;
+        text-align: center;
+        margin-top: auto;
+        height: 200px;
+
+    }
+
+    .items img{
+        object-fit: contain;
+    }
+
+    .items img:hover {
+        animation: rotation 6s infinite linear;
+    }
+
+    @keyframes rotation {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(359deg);
+        } 
+    }
+
+    .items-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 64px;
+        padding-bottom: 64px;
+        height: auto;
+        column-gap: 0px;
+    }
+
+    .upper-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 32px;
+    }
+
+    .upper-side {
+        width:20%;
+        text-align: right;
+    }
+
+    .upper-middle {
+        width: 50%;
+        text-align: left;
+        height: auto;
+        padding-top: 16px;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-bottom: 32px;
+        background-color: #F5F5F5;
+        background-image: linear-gradient(#d1d5db 1px, transparent 0px);
+        background-size: 100% 2em;
+        background-position-y: 2rem;
+        border: 1px solid #78866b;
+    }
+
+    .lower-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 32px;
+    }
+
+    .lower-side {
+        width:25%;
+        text-align: right;
+    }
+
+    .lower-middle {
+        width: 50%;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 768px) {
+        .items-wrapper > * {
+            flex-basis:50%;
+        }
+        .upper-wrapper > * {
+            flex-basis: 100%;
+        }
+        .lower-wrapper > * {
+            flex-basis: 100%;
+        }
+    }
+
+    p {
+        line-height: 32px;
+    }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="upper-wrapper">
+        <div class="upper-side"></div>
+        <div class="upper-middle">
+            <p>
+                A friend shared this poem to me at a time when my body felt
+                like a prison that I wanted to escape from.
+                I held this poem close to my heart, like a prayer chanted every night.
+                These days I wake up feeling like I actually want to be here,
+                alive and having the chance to see the sky light up. 
+                <span role="img" aria-label="">&#x2600;&#xFE0E;</span>
+                <span role="img" aria-label="">&#x2601;&#xFE0E;</span>
+                <br><br><br>
+                    <span role="img" aria-label="">&#x273F;&#xFE0E;</span>
+                    <b> Wild Geese by Mary Oliver </b>
+                    <span role="img" aria-label="">&#x273F;&#xFE0E;</span>
+                    <i>
+                    <br><br>
+                    You do not have to be good.<br>
+                    You do not have to walk on your knees<br>
+                    for a hundred miles through the desert repenting.<br>
+                    You only have to let the soft animal of your body<br>
+                    love what it loves.<br>
+                    Tell me about despair, yours, and I will tell you mine.<br>
+                    Meanwhile the world goes on.<br>
+                    Meanwhile the sun and the clear pebbles of the rain<br>
+                    are moving across the landscapes,<br>
+                    over the prairies and the deep trees,<br>
+                    the mountains and the rivers.<br>
+                    Meanwhile the wild geese, high in the clean blue air,<br>
+                    are heading home again.<br>
+                    Whoever you are, no matter how lonely,<br>
+                    the world offers itself to your imagination,<br>
+                    calls to you like the wild geese, harsh and exciting—<br>
+                    over and over announcing your place<br>
+                    in the family of things.<br>
+                    </i>
+            </p>
+        </div>
+        <div class="upper-side"></div>
+    </div>
+    <div class="lower-wrapper">
+        <div class="lower-side"></div>
+        <div class="lower-middle">
+            <form>
+                <button formaction="house.html">Back</button>
+            </form>
+        </div>
+        <div class="lower-side"></div>
+    </div>
+</body>
+</html>

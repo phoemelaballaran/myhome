@@ -1,0 +1,168 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    
+    <title>Favorite song</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <style>
+        .upper-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 2%;
+            justify-content: space-between;
+            align-items: flex;
+            width: 95%;
+            height: auto;
+            margin: 0 auto;
+            padding-bottom: 32px;
+            
+        }
+
+        .upper-left {
+            width: 43%;
+            text-align: center;
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+            margin: 0 auto;
+            aspect-ratio: 1;
+        }
+
+        .upper-left img{
+            animation: rotation 24s infinite linear;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .upper-left img:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes rotation {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(359deg);
+            } 
+        }
+
+        .upper-right {
+            width: 43%;
+            text-align: center;
+            margin: 0 auto;
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+        }
+
+        .lower-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex;
+            width: 90%;
+            margin: 0 auto;
+            padding-bottom: 32px;
+        }
+
+        .lower-side {
+            width: 25%;
+            text-align: right;
+        }
+
+        .lower-middle {
+            width: 50%;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            .upper-wrapper>* {
+                flex-basis: 100%;
+            }
+
+            .lower-wrapper>* {
+                flex-basis: 100%;
+            }
+        }
+
+        audio {
+            margin-top: 24px;
+        }
+
+        img {
+            width: auto;
+            object-fit: contain;
+        }
+
+        h1 {
+            color: #F9F7EE;
+            text-align: justify;
+
+            font-size: 50px;
+        }
+
+        h2 {
+            color: #F9F7EE;
+            font-family: "Inter", sans-serif;
+            font-size: 30px;
+            text-align: left;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="upper-wrapper">
+        <div class="upper-left">
+            <img src="assets/images/record.png">
+            
+        </div>
+        <div class="upper-right">
+            <audio controls src="assets/audio/song.mp3"></audio>
+            <br>
+            <br>
+            <br>
+            <p>
+                I'd like to walk around in your mind someday<br>
+                I'd like to walk all over the things you say to me<br>
+                I'd like to run and jump on your solitude<br>
+                I'd like to rearrange your attitude to me<br>
+                You say you just want peace and you'd never hurt anyone<br>
+                You see the end before the beginning has ever begun<br>
+                I would disturb your easy tranquility<br>
+                I'd turn away the sad impossibility of your smile<br>
+                I'd sit there in the sun of the things I like about you<br>
+                I'd sing my songs and find out just what they mean to you<br>
+                But most of all I'd like you to be unaware<br>
+                And I'd just wander away<br>
+                Trailing palm leaves behind me<br>
+                So you don't even know that I've been there<br><br>
+                <a href="https://www.theguardian.com/music/2022/mar/18/folk-star-vashti-bunyan-my-voice-made-me-think-of-sorrow-i-didnt-even-sing-to-my-children" target="_blank">
+                    <span role="img" aria-label="">&#x273F;&#xFE0E; </span>
+                    <span role="img" aria-label="">&#x273F;&#xFE0E; </span>
+                    <span role="img" aria-label="">&#x273F;&#xFE0E; </span>
+                </a>
+            </p>
+        </div>
+    </div>
+    <div class="lower-wrapper">
+        <div class="lower-side"></div>
+        <div class="lower-middle">
+            <form>
+                <button formaction="house.html">BACK</button>
+            </form>
+        </div>
+        <div class="lower-side"></div>
+    </div>
+</body>
+
+</html>
