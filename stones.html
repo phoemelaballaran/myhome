@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 
 
-    <title>Stones</title>
+    <title>My stone collection</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
     <style>
@@ -89,18 +89,6 @@
             text-align: center;
         }
 
-        @media screen and (max-width: 768px) {
-
-            .upper-wrapper>* {
-                flex-basis: 100%;
-            }
-
-            .lower-wrapper>* {
-                flex-basis: 100%;
-            }
-
-        }
-
         .lower-wrapper {
             display: flex;
             flex-wrap: wrap;
@@ -170,7 +158,16 @@
             overflow: auto;
         }
 
-        @media screen and (max-width: 700px) {
+        @media screen and (max-width: 768px) {
+
+            .upper-wrapper>* {
+                flex-basis: 100%;
+            }
+
+            .lower-wrapper>* {
+                flex-basis: 100%;
+            }
+
             .box {
                 width: 70%;
             }
@@ -178,6 +175,7 @@
             .popup {
                 width: 70%;
             }
+
         }
 
     </style>
