@@ -167,33 +167,6 @@
             }
         }
 
-        .hovertext {
-            position: relative;
-            margin: auto;
-        }
-
-        .hovertext:before {
-        content: attr(data-hover);
-        visibility: hidden;
-        opacity: 0;
-        width: 100px;
-        background-color: #78866b;
-        color: #F9F7EE;
-        text-align: center;
-        border-radius: 5px;
-        padding: 5px 0;
-        font-family: 'Inter',sans-serif;
-
-        position: absolute;
-        z-index: 1;
-        left: 70px;
-        top: 110%;
-        }
-
-        .hovertext:hover:before {
-        opacity: 1;
-        visibility: visible;
-        }
     </style>
 
 </head>
@@ -207,7 +180,6 @@
         <div class="upper-right">
             <div class="upper-right-row">
                 <div class="upper-item">
-                    <span class="hovertext" data-hover="Click me">
                     <a href="#stone1"><img src="assets/images/home/stone.png"></a></span>
                 </div>
                 <div class="upper-item">
