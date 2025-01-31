@@ -13,10 +13,6 @@
     font-display: block;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-$font__family:'Inter', sans-serif;
-
-
 body {
     margin: 16px;
     background: #F9F7EE;
