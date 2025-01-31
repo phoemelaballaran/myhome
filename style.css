@@ -78,3 +78,7 @@ button:active {
   background: #78866b;
   color: #F9F7EE;
 }
+
+audio::-webkit-media-controls-panel {
+  background-color: #00FFFFFF;
+}
