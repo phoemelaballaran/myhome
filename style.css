@@ -80,5 +80,5 @@ button:active {
 }
 
 audio::-webkit-media-controls-panel {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
 }
