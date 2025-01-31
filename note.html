@@ -7,50 +7,12 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     
     <title>Favorite poem</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
     <style>
-
-    .items  {
-        width: 25%;
-        text-align: center;
-        margin-top: auto;
-        height: 200px;
-
-    }
-
-    .items img{
-        object-fit: contain;
-    }
-
-    .items img:hover {
-        animation: rotation 6s infinite linear;
-    }
-
-    @keyframes rotation {
-        from{
-            transform: rotate(0deg);
-        }
-        to{
-            transform: rotate(359deg);
-        } 
-    }
-
-    .items-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex;
-        width: 90%;
-        margin: 0 auto;
-        padding-top: 64px;
-        padding-bottom: 64px;
-        height: auto;
-        column-gap: 0px;
-    }
 
     .upper-wrapper {
         display: flex;
@@ -113,9 +75,6 @@
     }
 
     @media screen and (max-width: 768px) {
-        .items-wrapper > * {
-            flex-basis:50%;
-        }
         .upper-wrapper > * {
             flex-basis: 100%;
         }
@@ -126,6 +85,13 @@
 
     p {
         line-height: 32px;
+    }
+    
+    .letter-body {
+        font-family: "Edu AU VIC WA NT Pre", serif;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
     }
 
     </style>
@@ -150,7 +116,7 @@
         <div class="upper-side"></div>
         <div class="middle-side"></div>
         <div class="middle-middle">
-            <p>
+            <p class="letter-body">
                     <i>Wild Geese by Mary Oliver
                     
                     <br><br>
