@@ -79,6 +79,9 @@ button:active {
   color: #F9F7EE;
 }
 
-audio::-webkit-media-controls-panel {
-  background-color: rgba(0, 0, 0, 0);
+audio::-webkit-media-controls-panel { 
+    background-color: rgba(241, 241, 241, 0.16);
+}
+audio::-webkit-media-controls-enclosure {
+    background-color: transparent;
 }
