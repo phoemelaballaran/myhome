@@ -8,7 +8,9 @@
 
 @font-face {
     font-family: 'Cigno';
-    src: url('assets/fonts/cigno.ttf') format('ttf')
+    src: url('assets/fonts/cigno/cigno.woff') format('woff'),
+    url('assets/fonts/cigno/cigno.woff2') format('woff2'),
+      url('assets/fonts/cigno/cigno.ttf') format('ttf');
     font-display: block;
 }
 
