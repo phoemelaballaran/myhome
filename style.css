@@ -7,9 +7,8 @@
 /* Our default values set as CSS variables */
 
 @font-face {
-    font-family: 'Pilowlava';
-    src: url('assets/fonts/Pilowlava/Pilowlava.woff') format('woff'),
-    url('assets/fonts/Pilowlava/Pilowlava.woff2') format('woff2');
+    font-family: 'Cigno';
+    src: url('assets/fonts/cigno.ttf') format('ttf')
     font-display: block;
 }
 
@@ -25,7 +24,7 @@ body {
 h1 {
     font-style: normal;
     font-size: 45px;
-    font-family: 'Pilowlava', sans-serif;
+    font-family: 'Cigno', sans-serif;
     color: #78866b;
     text-align: center;
 }
