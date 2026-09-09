@@ -25,7 +25,7 @@ body {
   
 h1 {
     font-style: normal;
-    font-size: 65px;
+    font-size: 80px;
     font-family: 'Cigno', sans-serif;
     color: #78866b;
     text-align: center;
@@ -68,7 +68,7 @@ button {
   text-align: center;
   display: inline-block;
   font-family: 'Cigno',sans-serif;
-  font-size: 45px;
+  font-size: 40px;
   color:#78866b;
   cursor: pointer;
   background: #F9F7EE;
