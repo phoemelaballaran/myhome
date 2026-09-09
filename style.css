@@ -58,11 +58,11 @@ img {
 
 button {
   border: 1px solid #78866b;
-  padding: 10px 20px;
+  padding: 5px 15px;
   text-align: center;
   display: inline-block;
   font-family: 'Cigno',sans-serif;
-  font-size: 20px;
+  font-size: 30px;
   color:#78866b;
   cursor: pointer;
   background: #F9F7EE;
